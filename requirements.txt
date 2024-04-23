@@ -1,0 +1,14 @@
+gitpython
+requests~=2.31.0
+pinecone-client
+openai
+click
+python-dotenv~=1.0.1
+pytest
+gensim
+pygments
+transformers
+torch
+astunparse~=1.6.3
+flask~=3.0.3
+setuptools~=65.5.1
