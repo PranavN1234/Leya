@@ -1,8 +1,38 @@
-# Vela
-
-# Vela (derived from "vela" meaning sail or navigation, symbolizing guidance)
+# Leya
 
 AI coding assistant which can directly be ported into the terminal and be used to query complex Git repositories
+
+Git Coding Assistant
+Overview
+# Git Coding Assistant
+
+## Overview
+
+The Git Coding Assistant is a versatile tool designed to streamline coding workflows by providing convenient features for repository management and code queries. Leveraging the power of Git and various AI technologies, it offers functionalities such as cloning repositories, selecting repositories for focused queries, and extracting relevant code snippets based on user queries.
+
+## Features
+
+- **Repository Cloning**: Easily clone GitHub repositories directly from the command line.
+- **Repository Selection**: Select repositories to work with, enabling focused queries and interactions.
+- **Code Querying**: Query repositories for specific code issues or information using natural language queries.
+- **Function-based Queries**: Narrow down queries by specifying function names to focus on.
+- **Intelligent Answer Generation**: Utilize AI to extract and provide intelligent answers to code-related queries.
+
+## Usage
+
+1. **Cloning Repositories and uploading repo chunks to pinecone**:
+   ```bash
+   $ leya -r <repository_url>
+1. **Selecting Repositories**:
+   ```bash
+   $ leya -s
+1. **Querying Repositories**:
+   ```bash
+   $ leya -q "<query>" 
+1. **Optional addition of Function-based Queries**:
+   ```bash
+   $ leya -q "<query>" -f <function_name_1> <function_name_2> ...
+
 
 ### Store repositories
 
