@@ -32,8 +32,8 @@ Open your terminal and export the environment variables using the following comm
 
 **For Windows users, you can set the environment variables using the following commands in PowerShell**
     ```bash
-        $ env:OPENAI_API_KEY="<your_openai_api_key>"
-        $ env:PINECONE_KEY="<your_pinecone_api_key>"
+        $ $env:OPENAI_API_KEY="<your_openai_api_key>"
+        $ $env:PINECONE_KEY="<your_pinecone_api_key>"
     ```
 **Option 3: Add Environment Variables (Manual)**
 
