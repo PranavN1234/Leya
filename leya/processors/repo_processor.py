@@ -1,7 +1,7 @@
 import os
 import ast
-from leya.processors.file_processor import chunk_code
-from leya.utils.condense_file import read_and_condense_map
+from .file_processor import chunk_code
+from ..utils.condense_file import read_and_condense_map
 def parse_python_file(file_path):
     """Parse a Python file and return the formatted names of classes and functions."""
     with open(file_path, 'r', encoding='utf-8') as file:

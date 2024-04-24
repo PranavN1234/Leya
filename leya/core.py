@@ -1,11 +1,11 @@
 from git import Repo
 from git.exc import GitCommandError
 
-from leya.processors.repo_processor import process_repos
-from leya.services.pincecone import embed_chunks_and_upload_to_pinecone, setup_pinecone_index, get_most_similar_chunks_for_query
-from leya.utils.embedPrompt import build_prompt
-from leya.utils.format_text import format_answer
-from leya.services.openai import get_llm_answer
+from .processors.repo_processor import process_repos
+from .services.pincecone import embed_chunks_and_upload_to_pinecone, setup_pinecone_index, get_most_similar_chunks_for_query
+from .utils.embedPrompt import build_prompt
+from .utils.format_text import format_answer
+from .services.openai import get_llm_answer
 import os
 
 

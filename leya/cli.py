@@ -1,9 +1,9 @@
 import argparse
 import os
 from dotenv import load_dotenv
-from leya.core import clone_repository, handle_query
-from leya.repo_states import save_selected_repo, load_selected_repo
-from leya.utils.set_enivronment_variables import set_environment_variables
+from .core import clone_repository, handle_query
+from .repo_states import save_selected_repo, load_selected_repo
+from .utils.set_enivronment_variables import set_environment_variables
 
 def list_repositories(repos_path):
     """ Lists directories in the given path """

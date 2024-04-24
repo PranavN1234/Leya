@@ -1,6 +1,6 @@
 # Import necessary modules
 from pinecone import Pinecone, ServerlessSpec
-from leya.services.openai import get_embedding
+from .openai import get_embedding
 import os
 
 # Define functions
