@@ -2,10 +2,6 @@
 
 AI coding assistant which can directly be ported into the terminal and be used to query complex Git repositories
 
-Git Coding Assistant
-Overview
-# Git Coding Assistant
-
 ## Overview
 
 The Git Coding Assistant is a versatile tool designed to streamline coding workflows by providing convenient features for repository management and code queries. Leveraging the power of Git and various AI technologies, it offers functionalities such as cloning repositories, selecting repositories for focused queries, and extracting relevant code snippets based on user queries.
