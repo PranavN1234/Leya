@@ -76,20 +76,26 @@ Create a new Pull Request.
 
 Developed by: PranavN1234
 
-
+## Working 
 ### Store repositories
 
-![Screenshot 2024-04-23 200705](https://github.com/PranavN1234/Vela/assets/44135759/6cbf32f5-e077-4c59-962f-611c798fa85b)
+![Screenshot 2024-04-24 125402](https://github.com/PranavN1234/Leya/assets/44135759/f811430d-d93a-4364-82da-8763d35a8ea8)
+
 
 ### Swap between stored repositories 
 
-![Screenshot 2024-04-23 200630](https://github.com/PranavN1234/Vela/assets/44135759/bf702ac3-3b82-4cf9-98b2-8bb2e78c9e65)
+![Screenshot 2024-04-24 125420](https://github.com/PranavN1234/Leya/assets/44135759/1dce74e8-37a1-4b3e-bed2-065379010055)
+
 
 ### Sample queries
 
-![Screenshot 2024-04-23 200502](https://github.com/PranavN1234/Vela/assets/44135759/17108bd9-9a72-4653-be05-c5d9c2932dae)
+** Query without functional parameters ** 
 
-![Screenshot 2024-04-23 200444](https://github.com/PranavN1234/Vela/assets/44135759/929238b7-e793-47a4-b4b8-3d59e8fa3d7d)
+![Screenshot 2024-04-24 125501](https://github.com/PranavN1234/Leya/assets/44135759/e8098cc3-b347-4287-b2c0-6b9730412159)
+
+** Query with functions appended to narrow scope of search **
+![Screenshot 2024-04-24 125642](https://github.com/PranavN1234/Leya/assets/44135759/826719cc-0b97-4aa2-879d-670b5cec125c)
+
 
 
 
