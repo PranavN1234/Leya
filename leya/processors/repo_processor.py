@@ -1,7 +1,7 @@
 import os
 import ast
-from vela.processors.file_processor import chunk_code
-from vela.utils.condense_file import read_and_condense_map
+from leya.processors.file_processor import chunk_code
+from leya.utils.condense_file import read_and_condense_map
 def parse_python_file(file_path):
     """Parse a Python file and return the formatted names of classes and functions."""
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -46,9 +46,9 @@ def write_repo_map_to_file(repo_map, repo_name, file_path):
 
 
 def process_repos(name):
-    vela_path = os.path.abspath(os.path.join(os.getcwd()))  # Path to Vela directory
-    repos_path = os.path.join(vela_path, 'repos')  # Path to repos directory inside Vela
-    output_file_path = os.path.join(vela_path, 'repos', name, 'code-map.txt')  # Output file path in Vela/repos/<repo-name> directory
+    leya_path = os.path.abspath(os.path.join(os.getcwd()))  # Path to Leya directory
+    repos_path = os.path.join(leya_path, 'repos')  # Path to repos directory inside Leya
+    output_file_path = os.path.join(leya_path, 'repos', name, 'code-map.txt')  # Output file path in Leya/repos/<repo-name> directory
     chunks = []
     if os.path.exists(repos_path):
         repo_name = name

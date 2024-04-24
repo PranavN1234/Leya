@@ -1,11 +1,11 @@
 from git import Repo
 from git.exc import GitCommandError
 
-from vela.processors.repo_processor import process_repos
-from vela.services.pincecone import embed_chunks_and_upload_to_pinecone, setup_pinecone_index, get_most_similar_chunks_for_query
-from vela.utils.embedPrompt import build_prompt
-from vela.utils.format_text import format_answer
-from vela.services.openai import get_llm_answer
+from leya.processors.repo_processor import process_repos
+from leya.services.pincecone import embed_chunks_and_upload_to_pinecone, setup_pinecone_index, get_most_similar_chunks_for_query
+from leya.utils.embedPrompt import build_prompt
+from leya.utils.format_text import format_answer
+from leya.services.openai import get_llm_answer
 import os
 
 
@@ -17,8 +17,8 @@ def clone_repository(repo_url):
             repo_name = repo_name[:-4]
 
         # Path where the repository will be cloned
-        vela_path = os.path.abspath(os.path.join(os.getcwd()))
-        repos_path = os.path.join(vela_path, 'repos')
+        leya_path = os.path.abspath(os.path.join(os.getcwd()))
+        repos_path = os.path.join(leya_path, 'repos')
         repo_path = os.path.join(repos_path, repo_name)
 
         # Create the directory if it doesn't exist
