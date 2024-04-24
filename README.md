@@ -35,7 +35,7 @@ Open your terminal and export the environment variables using the following comm
         $ env:OPENAI_API_KEY="<your_openai_api_key>"
         $ env:PINECONE_KEY="<your_pinecone_api_key>"
     ```
-# Option 3: Add Environment Variables (Manual)
+**Option 3: Add Environment Variables (Manual)**
 
 Alternatively, you can manually add the environment variables through your system settings:
 
