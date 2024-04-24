@@ -16,7 +16,6 @@ The Git Coding Assistant is a versatile tool designed to streamline coding workf
 
 ## Usage
 
-Before using Leya, you need to set up your environment variables for the OpenAI API key and Pinecone API key:
 
 Before using Leya, you need to set up your environment variables for the OpenAI API key and Pinecone API key:
 
@@ -29,12 +28,12 @@ Open your terminal and export the environment variables using the following comm
 ```
 
 
-# Option 2: Export Environment Variables (Windows)
+**Option 2: Export Environment Variables (Windows)**
 
 **For Windows users, you can set the environment variables using the following commands in PowerShell**
     ```bash
-$env:OPENAI_API_KEY="<your_openai_api_key>"
-$env:PINECONE_KEY="<your_pinecone_api_key>"
+        $ env:OPENAI_API_KEY="<your_openai_api_key>"
+        $ env:PINECONE_KEY="<your_pinecone_api_key>"
     ```
 # Option 3: Add Environment Variables (Manual)
 
@@ -44,7 +43,7 @@ OpenAI API Key: Add a new environment variable named OPENAI_API_KEY with your Op
 Pinecone API Key: Add a new environment variable named PINECONE_KEY with your Pinecone API key as the value.
 After setting up the environment variables, Leya will be able to access your API keys for authentication
 
-   
+# After Environment Variable setup 
 
 1. **Downloading the package**:
    ```bash
@@ -63,9 +62,6 @@ After setting up the environment variables, Leya will be able to access your API
    ```bash
    $ leya -q "<query>" -f <function_name_1> <function_name_2> ...
 
-## Setup
-
-Provide Pinecone and OpenAI keys when prompted for initial setup
 
 ## Contributing
 
