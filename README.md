@@ -16,18 +16,39 @@ The Git Coding Assistant is a versatile tool designed to streamline coding workf
 
 ## Usage
 
-1. **Cloning Repositories and uploading repo chunks to pinecone**:
+1. **Downloading the package**:
+   ```bash
+   $ pip install leya
+   
+2. **Cloning Repositories and uploading repo chunks to pinecone**:
    ```bash
    $ leya -r <repository_url>
-1. **Selecting Repositories**:
+3. **Selecting Repositories**:
    ```bash
    $ leya -s
-1. **Querying Repositories**:
+4. **Querying Repositories**:
    ```bash
    $ leya -q "<query>" 
-1. **Optional addition of Function-based Queries**:
+5. **Optional addition of Function-based Queries**:
    ```bash
    $ leya -q "<query>" -f <function_name_1> <function_name_2> ...
+
+## Setup
+
+Provide Pinecone and OpenAI keys when prompted for initial setup
+
+## Contributing
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Create a new Pull Request.
+
+## Credits
+
+Developed by: PranavN1234
 
 
 ### Store repositories
