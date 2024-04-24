@@ -2,7 +2,8 @@ import argparse
 import os
 from dotenv import load_dotenv
 from vela.core import clone_repository, handle_query
-from vela.repo_states import save_selected_repo, load_selected_repo, clear_selected_repo
+from vela.repo_states import save_selected_repo, load_selected_repo
+from vela.utils.set_enivronment_variables import set_environment_variables
 
 def list_repositories(repos_path):
     """ Lists directories in the given path """
@@ -13,6 +14,7 @@ def list_repositories(repos_path):
         return []
 def main():
     load_dotenv()
+    set_environment_variables()
     parser = argparse.ArgumentParser(description="Vela - Coding Assistant")
     parser.add_argument('-r', '--repo', type=str, help='Clone GitHub repository')
     parser.add_argument('-s', '--select', action='store_true', help='Select a repository to work with')
