@@ -1,6 +1,7 @@
 import os
 import ast
 from vela.processors.file_processor import chunk_code
+from vela.utils.condense_file import read_and_condense_map
 def parse_python_file(file_path):
     """Parse a Python file and return the formatted names of classes and functions."""
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -43,28 +44,28 @@ def write_repo_map_to_file(repo_map, repo_name, file_path):
                 print(f"  - {component}", file=output_file)
 
 
-import os
 
-def process_repos():
-    # Define the path to the repositories
-
+def process_repos(name):
     vela_path = os.path.abspath(os.path.join(os.getcwd()))  # Path to Vela directory
-    print(vela_path)
     repos_path = os.path.join(vela_path, 'repos')  # Path to repos directory inside Vela
-    print('repo-path', repos_path)
-    output_file_path = os.path.join(vela_path, 'repos', 'code-map.txt')  # Output file path in Vela/repos directory
+    output_file_path = os.path.join(vela_path, 'repos', name, 'code-map.txt')  # Output file path in Vela/repos/<repo-name> directory
     chunks = []
-    # Check if the repos_path exists and if it contains only one directory
-    if os.path.exists(repos_path) and len(os.listdir(repos_path)) == 1:
-        repo_name = os.listdir(repos_path)[0]
+    if os.path.exists(repos_path):
+        repo_name = name
         repo_path = os.path.join(repos_path, repo_name)
         print(f"Processing repository: {repo_name}")
 
         if os.path.isdir(repo_path):
             repo_map = map_repo(repo_path, repo_name)  # Map the repository
-            write_repo_map_to_file(repo_map, repo_name, output_file_path)  # Write map to file
+            write_repo_map_to_file(repo_map, repo_name, output_file_path)  # Write initial verbose map to file
 
-            # List to store chunks from all Python files
+            # Read, condense, and overwrite the repository map
+            condensed_map = read_and_condense_map(output_file_path)
+            with open(output_file_path, 'w') as output_file:
+                output_file.write(condensed_map)  # Overwrite with condensed map
+
+            # Process code chunks for analysis
+
             for subdir, dirs, files in os.walk(repo_path):
                 for file in files:
                     if file.endswith('.py'):
@@ -73,8 +74,6 @@ def process_repos():
                         chunks.extend(file_chunks)
 
     return chunks
-
-
 
 
 

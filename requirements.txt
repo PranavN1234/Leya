@@ -12,3 +12,4 @@ torch
 astunparse~=1.6.3
 flask~=3.0.3
 setuptools~=65.5.1
+vela~=0.1.0
