@@ -1,4 +1,7 @@
 # Vela
+
+# Vela (derived from "vela" meaning sail or navigation, symbolizing guidance)
+
 AI coding assistant which can directly be ported into the terminal and be used to query complex Git repositories
 
 ### Store repositories
