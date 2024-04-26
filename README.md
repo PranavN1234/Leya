@@ -2,6 +2,8 @@
 
 AI coding assistant which can directly be ported into the terminal and be used to query complex Git repositories
 
+https://pypi.org/project/leya/
+
 ## Overview
 
 The Git Coding Assistant is a versatile tool designed to allow you to query and find solutions to code within your git repository. Leveraging the power of Git and OpenAI, it offers functionalities such as cloning repositories, selecting repositories for focused queries, and extracting relevant code snippets and providing you solutions to your queries.
